@@ -1,0 +1,307 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="jquery-3.1.1.min.js"></script>
+    <title>Arctide Resume</title>
+</head>
+
+<body>
+
+<div id="mySidenav" class="sidenav">
+    <a href="#about" id="aboutNav" class="About" onclick="clickAbout()">
+        <span class="textNav" id="textAbout">About</span>
+        <i id="iAbout" class="fa fa-user fa-lg"></i>
+    </a>
+    <a href="#portfolio" id="portfolioNav" class="Info" onclick="clickPortfolio()">
+        <span class="textNav" id="textInfo">Portfolio</span>
+        <i id="iInfo" class="fa fa-briefcase fa-lg"></i>
+    </a>
+    <a href="#contacts" id="contactsNav" class="Contacts" onclick="clickContacts()">
+        <span class="textNav" id="textContacts">Contacts</span>
+        <i id="iContacts" class="fa fa-phone fa-lg"></i>
+    </a>
+</div>
+
+<div id="parallax" class="parallax-container" >
+    <div class="parallax-base">
+        <div class="layer-1">Arctide</div>
+        <img class="layer-2" id="logo" src="img/Arctide%20Logo%20Small.png">
+    </div>
+</div>
+
+    <div class="container">
+
+        <div class="block">
+
+            <video loop muted autoplay class="bgVideo"><source src="video/particlesfix.mp4" type="video/mp4"></video>
+
+            <div id="about" class="content">
+
+                <!--<div class="aboutProfile">-->
+                    <!--<img id="photo" src="img/Photo%20Small.jpg">-->
+                    <!--Nikita Adamchuk-->
+                <!--</div>-->
+
+                <div class="aboutContent">
+                    <div id="aboutProgramming" class="aboutBlock">
+                        <i class="fa fa-cogs about"></i>
+                        Programming
+                        <div class="graph best">HTML/CSS</div>
+                        <div class="graph nice">JAVASCRIPT</div>
+                        <div class="graph bad">PHP/MYSQL</div>
+                    </div>
+                    <div id="aboutDesign" class="aboutBlock">
+                        <i class="fa fa-pencil about"></i>
+                        Design
+                        <div class="graph best">PHOTOSHOP</div>
+                    </div>
+                    <div id="aboutMusic" class="aboutBlock">
+                        <i class="fa fa-music about"></i>
+                        Music
+                        <div class="graph best">FL STUDIO</div>
+                        <div class="graph best">COMPOSING</div>
+                        <div class="graph best">GUITAR</div>
+                        <div class="graph nice">SINGING</div>
+                    </div>
+                    <div id="aboutModmaking" class="aboutBlock">
+                        <i class="fa fa-gamepad about"></i>
+                        Modmaking
+                        <div class="graph best">WARCRAFT 3</div>
+                        <div class="graph nice">SKYRIM</div>
+                    </div>
+                    <div id="aboutMontaging" class="aboutBlock">
+                        <i class="fa fa-video-camera about"></i>
+                        Montaging
+                        <div class="graph best">SONY VEGAS</div>
+                        <div class="graph bad">AFTER EFFECTS</div>
+                    </div>
+                    <div id="aboutLanguages" class="aboutBlock">
+                        <i class="fa fa-language about"></i>
+                        Languages
+                        <div class="graph best">RUSSIAN</div>
+                        <div class="graph best">ENGLISH</div>
+                        <div class="graph bad">ROMANIAN</div>
+                    </div>
+                    <div id="aboutOffice" class="aboutBlock">
+                        <i class="fa fa-windows about"></i>
+                        Office
+                        <div class="graph nice">WORD</div>
+                        <div class="graph nice">EXCEL</div>
+                        <div class="graph nice">POWERPOINT</div>
+                    </div>
+                    <div id="aboutQualities" class="aboutBlock">
+                        <i class="fa fa-male about"></i>
+                        Qualities
+                        <div class="graph best">FAST LEARNER</div>
+                        <div class="graph best">CREATIVE</div>
+                        <div class="graph best">LITERATE</div>
+                        <div class="graph best">GENIAL</div>
+                        <div class="graph best">HONEST</div>
+                        <div class="graph bad">SHY</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="portfolio" class="content">
+                <div class="portfolio-container">
+
+                    <div class="portfolio-block">
+                        <div class="portfolio-card">
+                            <div class="front face">
+                                SITES
+                            </div>
+                            <div class="back face center">
+                                <div class="gallery-container">
+                                    <a target="_blank" href="Waxom%20Template/index.html">
+                                        <img src="img/Waxom.png" class="thumbnail">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-block">
+                        <div class="portfolio-card">
+                            <div class="front face">
+                                MUSIC
+                            </div>
+                            <div class="back face center">
+                                <div class="music-block">
+                                    Being Strong
+                                    <audio controls>
+                                        <source src="audio/Being%20Strong.mp3" type="audio/mpeg"></audio>
+                                </div>
+                                <div class="music-block">
+                                    Skyfall
+                                    <audio controls>
+                                        <source src="audio/Skyfall.mp3" type="audio/mpeg"></audio>
+                                </div>
+                                <div class="music-block">
+                                    Friend's Room
+                                    <audio controls>
+                                        <source src="audio/Friend's%20Room.mp3" type="audio/mpeg"></audio>
+                                </div>
+                                <div class="music-block">
+                                    Miracle
+                                    <audio controls>
+                                        <source src="audio/Miracle%20(cut).mp3" type="audio/mpeg">
+                                    </audio>
+                                </div>
+                                <div class="music-block">
+                                    Chill
+                                    <audio controls>
+                                        <source src="audio/Chill.mp3" type="audio/mpeg">
+                                    </audio>
+                                </div>
+                                <div class="music-block">
+                                    Prana
+                                    <audio controls>
+                                        <source src="audio/Prana%20(cut).mp3" type="audio/mpeg">
+                                    </audio>
+                                </div>
+                                <div class="music-block">
+                                    Keygen
+                                    <audio controls>
+                                        <source src="audio/Keygen%20(cut).mp3" type="audio/mpeg">
+                                    </audio>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-block">
+                        <div class="portfolio-card">
+                            <div class="front face">
+                                MODS
+                            </div>
+                            <div class="back face center">
+                                <div class="gallery-container">
+                                    <div class="gallery-container">
+                                        <a href="#img3">
+                                            <img src="img/Edemium1.jpg" class="thumbnail">
+                                        </a>
+                                        <a href="#" class="lightbox" id="img3">
+                                            <img src="img/Edemium1.jpg">
+                                        </a>
+
+                                        <a href="#img4">
+                                            <img src="img/Edemium2.jpg" class="thumbnail">
+                                        </a>
+                                        <a href="#" class="lightbox" id="img4">
+                                            <img src="img/Edemium2.jpg">
+                                        </a>
+
+                                        <a href="#img5">
+                                            <img src="img/Edemium3.jpg" class="thumbnail">
+                                        </a>
+                                        <a href="#" class="lightbox" id="img5">
+                                            <img src="img/Edemium3.jpg">
+                                        </a>
+
+                                        <a href="#img6">
+                                            <img src="img/Edemium4.jpg" class="thumbnail">
+                                        </a>
+                                        <a href="#" class="lightbox" id="img6">
+                                            <img src="img/Edemium4.jpg">
+                                        </a>
+
+                                        <a href="#img7">
+                                            <img src="img/Edemium5.jpg" class="thumbnail">
+                                        </a>
+                                        <a href="#" class="lightbox" id="img7">
+                                            <img src="img/Edemium5.jpg">
+                                        </a>
+
+                                        <a href="#img8">
+                                            <img src="img/Edemium6.jpg" class="thumbnail">
+                                        </a>
+                                        <a href="#" class="lightbox" id="img8">
+                                            <img src="img/Edemium6.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="contacts" class="content">
+                <div class="contacts-container">
+                    <div class="contacts-block">
+                        <img src="img/Photo%20Small.jpg">
+                        <div class="contacts-info">
+                            <p>Nikita Adamchuk</p>
+                            <p>October 9, 1995 (21)</p>
+                            <p>Moldova, Kishinev</p>
+                            <p>+37369696664</p>
+                            <p>thearctide@gmail.com</p>
+                            <p id="contacts-social">
+                                <a href="https://vk.com/adamshek" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                                <a href="https://www.facebook.com/profile.php?id=100005927201395" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="https://www.youtube.com/channel/UCUGuZOeweOZfVcWuua_9c0g" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+
+    var about = document.getElementById("about");
+    var portfolio = document.getElementById("portfolio");
+    var contacts = document.getElementById("contacts");
+    var parallax = document.getElementById("parallax");
+
+    function hideblocks(){
+        about.style.display = "none";
+        portfolio.style.display = "none";
+        contacts.style.display = "none";
+        parallax.style.display = "none";
+    }
+    function clickAbout() {
+        hideblocks();
+        var parallax = document.getElementById("parallax");
+        about.style.display = "block";
+        parallax.style.display = "block";
+    }
+    function clickPortfolio() {
+        hideblocks();
+        portfolio.style.display = "block";
+    }
+    function clickContacts() {
+        hideblocks();
+        var parallax = document.getElementById("parallax2");
+        contacts.style.display = "block";
+    }
+
+    //3D Параллакс
+    function cssParallax(cont, el, radiusVal){
+        $(cont).mousemove(function(event) {
+
+            cx = Math.ceil($(window).width() / 2.0);
+            cy = Math.ceil($(window).height() / 2.0);
+            dx = event.pageX - cx;
+            dy = event.pageY - cy;
+
+            tiltx = (dy / cy);
+            tilty = - (dx / cx);
+            radius = Math.sqrt(Math.pow(tiltx,2) + Math.pow(tilty,2));
+            degree = (radius * radiusVal);
+
+            $(el, cont).css('-webkit-transform','rotate3d(' + tiltx + ', ' + tilty + ', 0, ' + degree + 'deg)');
+            $(el, cont).css('transform','rotate3d(' + tiltx + ', ' + tilty + ', 0, ' + degree + 'deg)');
+        });
+    }
+
+    $(document).ready(function() {
+        cssParallax('.parallax-container', '.parallax-base', 20);
+        cssParallax('.parallax-container.first', '.parallax-base', 20);
+    });
+</script>
+</body>
+</html>

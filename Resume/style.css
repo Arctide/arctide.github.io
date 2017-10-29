@@ -1,0 +1,421 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: "Century Gothic", sans-serif;
+    animation: FadeIn;
+    animation-duration: 5s;
+}
+.block {
+    width: 100%;
+    height: 100vh;
+}
+.content {
+    position: fixed;
+    width: 100%;
+    height: 70%;
+    top: 15%;
+    background: linear-gradient(90deg, rgba(255,255,255,0.05), transparent);
+    animation: slideIn;
+    animation-duration: 2s;
+    transform-style: preserve-3d;
+}
+#about, #portfolio, #contacts {
+    display: none;
+}
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: scale(1.4) rotateX(-80deg);
+    ;
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) rotateX(0);
+    }
+}
+.aboutContent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.aboutProfile {
+    position: fixed;
+    width: 300px;
+    height: 70%;
+    color: white;
+}
+.aboutBlock {
+    transition: 0.4s;
+    padding-top: 15px;
+    border: none;
+    outline: none;
+    width: 150px;
+    height: 100vh;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    opacity: 0.7;
+    margin-top: 10px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 100%;
+}
+.aboutBlock:hover {
+    opacity: 1;
+    box-shadow: 0 0 100px #555555;
+    color: black;
+    background-color: white;
+    top: 50%;
+}
+.aboutBlock:hover .graph {
+    opacity: 1;
+}
+.graph {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6px;
+    opacity: 0;
+    transition: 0.5s;
+    color: black;
+}
+.best {
+    background: linear-gradient(90deg, rgba(13, 195, 0, 0.71), transparent);
+}
+.nice {
+    background: linear-gradient(90deg, rgba(195, 195, 23, 0.71), transparent);
+}
+.bad {
+    background: linear-gradient(90deg, rgba(195, 0, 5, 0.71), transparent);
+}
+.about {
+    font-size: 24px;
+}
+.portfolioContent {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/***********Portfolio***********/
+.portfolio-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.portfolio-block {
+    position: relative;
+    margin: 10px auto;
+    width: 33.3%;
+    height: 100%;
+    z-index: 1;
+}
+.portfolio-card {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 1s;
+}
+.portfolio-block:hover .portfolio-card {
+    transform: rotateY(180deg);
+}
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.face.back {
+    display: block;
+    transform: rotateY(180deg);
+    box-sizing: border-box;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 0 150px #9c9c9c;
+    background-color: #ffffff;
+}
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+.music-block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 25px 0 20px;
+    transition: 0.3s;
+    color: black;
+    font-size: 16px;
+    font-family: "Century Gothic", sans-serif;
+}
+.contacts-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contacts-block {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.contacts-info {
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding-left: 50px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contacts-info i {
+    font-size: 40px;
+    transition: 0.4s;
+    margin: 15px;
+}
+#contacts-social i:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    text-shadow: 0 0 125px #ffffff;
+}
+.fa-vk:hover {
+    color: #4c75a3;
+}
+a {
+    color: white;
+}
+.fa-facebook:hover {
+    color: #3b5999;
+}
+.fa-youtube-play:hover {
+    color: #cd201f;
+}
+.contacts-info p {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+#contacts-social {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contacts-block img {
+    max-width: 40%;
+    border-radius: 50%;
+}
+/*Заголовок*/
+#photo {
+    position: fixed;
+    width: 250px;
+    border-radius: 50%;
+    left: 30px;
+    top: 20%;
+}
+@keyframes titleAnim {
+    0%   {transform: scale(1, 1);}
+    50%  {transform: scale(1.2, 1.2)}
+    100%  {transform: scale(1, 1)}
+}
+/******Sidenav Style******/
+#mySidenav a {
+    position: fixed;
+    right: 0;
+    top: -40px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 120px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    z-index: 3;
+    background-color: white;
+    opacity: 0.7;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    box-shadow: 0 0 10px #787878;
+}
+#mySidenav a:hover {
+    z-index: 3;
+    top: 8px;
+    box-shadow: 0 0 100px #787878;
+    justify-content: space-between;
+}
+#aboutNav {
+    transform: rotateZ(89deg);
+    left: 35px;
+}
+#aboutNav:hover {
+    opacity: 1;
+    transform: rotateZ(3deg);
+}
+#aboutNav:hover i {
+    transform: rotateZ(0deg);
+}
+#aboutNav:hover .textNav {
+    opacity: 1;
+}
+#portfolioNav {
+    transform: rotateZ(92deg);
+    left: 150px;
+}
+#portfolioNav:hover {
+    opacity: 1;
+    transform: rotateZ(-3deg);
+}
+#portfolioNav:hover i {
+    transform: rotateZ(0deg);
+}
+#portfolioNav:hover .textNav {
+    opacity: 1;
+}
+#contactsNav {
+    transform: rotateZ(88deg);
+    left: 260px;
+}
+#contactsNav:hover {
+    opacity: 1;
+    transform: rotateZ(-1deg);
+}
+#contactsNav:hover i {
+    transform: rotateZ(0deg);
+}
+#contactsNav:hover .textNav {
+    opacity: 1;
+}
+.fa-lg {
+    transition: 0.3s;
+    margin-top: 3px;
+    transform: rotateZ(-90deg);
+}
+.textNav {
+    display: inline;
+    opacity: 0;
+    transition: 0.3s;
+}
+/***********Video**************/
+@keyframes FadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.bgVideo {
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    float: left;
+    filter: brightness(80%);
+}
+/**********Parallax***********/
+.parallax-base div {
+    opacity: .7;
+}
+.parallax-container {
+    position: absolute;
+    -moz-perspective: 1000px;
+    transform-style: preserve-3d;
+    overflow: hidden;
+    z-index: 1;
+    animation-name: titleAnim;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+}
+.parallax-base {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    width: 100vw;
+    height: 80vh;
+    z-index: 1;
+}
+.layer-1 {
+    -webkit-transform: translateZ(0px);
+    -moz-transform: translateZ(0px);
+    position: fixed;
+    text-transform: uppercase;
+    font-size: 64px;
+    top: 45%;
+    left: 0;
+    right: 0;
+    color: white;
+    letter-spacing: 8px;
+    text-align: center;
+}
+.layer-2 {
+    position: absolute;
+    -webkit-transform: translateZ(40px);
+    -moz-transform: translateZ(40px);
+}
+#logo {
+    width: 37px;
+    position: fixed;
+    right: 50.7%;
+    top: 48%;
+}
+/************Lightbox**************/
+.lightbox {
+    /** Default lightbox to hidden */
+    display: none;
+
+    /** Position and style */
+    position: fixed;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    top: -5%;
+    left: -66.7vw;
+    background: black;
+}
+.lightbox img {
+    /** Pad the lightbox image */
+    max-width: 100%;
+    max-height: 100%;
+}
+.lightbox:target {
+    /** Remove default browser outline */
+    outline: none;
+
+    /** Unhide lightbox **/
+    display: block;
+}
+.thumbnail {
+    width: 200px;
+    height: auto;
+    transition: 0.6s;
+    margin: 5px;
+}
+.thumbnail:hover {
+    filter: brightness(1.8);
+}
