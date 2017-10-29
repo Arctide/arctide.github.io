@@ -1,9 +1,10 @@
-body {
+﻿body {
     margin: 0;
     overflow: hidden;
     font-family: "Century Gothic", sans-serif;
     animation: FadeIn;
     animation-duration: 5s;
+    background-color: black;
 }
 .block {
     width: 100%;
